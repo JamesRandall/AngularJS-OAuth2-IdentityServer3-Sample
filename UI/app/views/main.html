@@ -1,0 +1,29 @@
+<div class="jumbotron">
+  <h1>angularjs-oauth2</h1>
+  <p class="lead">
+    <img src="images/accidentalfish.png" alt="Accidental Fish" width="140" height="140"><br>
+    Simple example of the angularjs-oauth2 plugin
+  </p>
+</div>
+
+<div class="row marketing">
+  <h4>Sample</h4>
+  <p>This sample demonstrates using the angularjs-oauth2 plugin to authorize against the IdentityServer3 STS and calling a protected resource implemented using ASP.Net Web API.</p>
+  <p>For more information <a href="http://www.azurefromthetrenches.com/?p=2241">see this blog post</a>.</p>
+  <h4>Installation</h4>
+  <p>
+    bower install angularjs-oauth2 --save
+  </p>
+
+  <h4>Configuration</h4>
+  <pre>
+    &lt;oauth2 authorization-url="https://localhost:44309/identity/connect/authorize"
+                 sign-out-url="https://localhost:44309/identity/connect/endsession"
+        sign-out-append-token="true"
+        sign-out-redirect-url="http://localhost:9000"
+                    client-id="sampleapiclient"
+                 redirect-url="http://localhost:9000"
+                response-type="id_token token"
+                        scope="openid myWebApi"&gt;
+    &lt;/oauth2&gt;</pre>
+</div>

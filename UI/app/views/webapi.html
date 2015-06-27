@@ -1,0 +1,16 @@
+<p>Click the button below to contact the secured Web API at <a href="https://localhost:44310/claims">https://localhost:44310/claims</a></p>
+<button class="btn btn-primary" ng-click="httpCall()">Make Web API call</button>
+<table class="table" ng-show="claims !== null">
+	<thead>
+		<tr>
+			<th>Claim</th>
+			<th>Value</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="claim in claims">
+			<td>{{claim.type}}</td>
+			<td>{{claim.value}}</td>
+		</tr>
+	</tbody>
+</table>
